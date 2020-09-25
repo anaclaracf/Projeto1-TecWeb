@@ -4,3 +4,23 @@ CREATE TABLE quadro (atividades CHAR(30), id INT NOT NULL PRIMARY KEY AUTO_INCRE
 INSERT quadro (atividades, tipo, tempo, dificuldade) VALUES ("estudar", "escola","2020-10-08","8");
 CREATE TABLE login (usuario CHAR(20), senha CHAR(20), id INT NOT NULL PRIMARY KEY AUTO_INCREMENT);
 INSERT login (usuario, senha) VALUES ("maria", "123456");
+
+como a tabela quadro deveria ser:
++-------------+---------------+------+-----+---------+----------------+
+| Field       | Type          | Null | Key | Default | Extra          |
++-------------+---------------+------+-----+---------+----------------+
+| atividades  | char(20)      | YES  |     | NULL    |                |
+| id          | int           | NO   | PRI | NULL    | auto_increment |
+| tipo        | char(20)      | YES  |     | NULL    |                |
+| tempo       | date          | YES  |     | NULL    |                |
+| dificuldade | decimal(10,0) | YES  |     | NULL    |                |
++-------------+---------------+------+-----+---------+----------------+
+
+como a tabela login deveria ser:
++---------+----------+------+-----+---------+----------------+
+| Field   | Type     | Null | Key | Default | Extra          |
++---------+----------+------+-----+---------+----------------+
+| usuario | char(20) | YES  |     | NULL    |                |
+| senha   | char(20) | YES  |     | NULL    |                |
+| id      | int      | NO   | PRI | NULL    | auto_increment |
++---------+----------+------+-----+---------+----------------+
