@@ -1,0 +1,6 @@
+CREATE DATABASE projeto1;
+USE projeto1;
+CREATE TABLE quadro (atividades CHAR(30), id INT NOT NULL PRIMARY KEY AUTO_INCREMENT, tipo CHAR(20), tempo DATE, dificuldade DECIMAL(10,0));
+INSERT quadro (atividades, tipo, tempo, dificuldade) VALUES ("estudar", "escola","2020-10-08","8");
+CREATE TABLE login (usuario CHAR(20), senha CHAR(20), id INT NOT NULL PRIMARY KEY AUTO_INCREMENT);
+INSERT login (usuario, senha) VALUES ("maria", "123456");
